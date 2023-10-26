@@ -1,0 +1,19 @@
+function sortArrayDescending(userInput) {
+  // Split the user input into an array.
+  
+  // Convert the elements of the array to numbers.
+  const numbers = userInput.map(Number);
+
+  // Sort the array in descending order using a comparator function.
+  numbers.sort((a, b) => b - a);
+
+  // Return the sorted array.
+  return numbers;
+}
+
+// Prompt the user to enter the elements of the array.
+const userInput =[2,5,3,9,3,6,0];
+
+// Sort the array in descending order and log it to the console.
+const sortedArray = sortArrayDescending(userInput);
+console.log(sortedArray);
